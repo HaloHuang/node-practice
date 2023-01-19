@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            position: relative;
+            border: 1px solid #ccc;
+            width: 100%;
+            height: 300px;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+        }
+        .innerbox{
+            background: red;
+            position: absolute;
+            /* 需要知道innerbox的宽高 */
+                /* left: 50%;
+                top: 50%;
+                margin-top: -80px;
+                margin-left: -80px; */
+
+                /* left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto; */
+
+                /* top: calc(50% - 80px);
+                left: calc(50% - 80px); */
+            /* 不需要知道innerbox的宽高 */
+                /* top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%); */
+                
+        }
+        .innerbox.size{
+            width: 160px;
+            height: 160px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <button id="sendBtn">发送消息</button>
+    <div class="wrap">
+        <div class="innerbox size"></div>
+    </div> -->
+</body>
+<script>
+    /*websocket*/
+    // const ws = new WebSocket('ws://192.168.1.103:3000')
+    // ws.onopen = function(){
+    //     console.log('client opened')
+    //     ws.send('client发送消息给服务端')
+    // }
+    // ws.onmessage = function(event) {
+    //     console.log('client接收来自服务端的消息：', event.data)
+    // }
+
+    // const btn = document.getElementById("sendBtn")
+    // btn.addEventListener("click", function() {
+    //     ws.send('client clicked')
+    // })
+</script>
+<script src="./write.js"></script>
+</html>
